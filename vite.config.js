@@ -20,8 +20,8 @@ export default defineConfig({
   plugins: [tailwindcss(), react()],
   build: {
     // Set the output folder to your cPanel public_html
-    outDir: "/home/dnstech/public_html", //production
-    // outDir: "dist", //development
+    //outDir: "/home/dnstech/public_html", //production
+     outDir: "dist", //development
     emptyOutDir: false, // ⚠️ set false to avoid deleting other files like PHP or Next.js configs
     rollupOptions: {
       input: path.resolve(__dirname, "index.html"),
